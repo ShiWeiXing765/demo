@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<mate charset="utf-8/">
+	<style>
+		*{padding:0;margin:0;}
+		a{text-decoration:none;}
+		body{background-color:rgb(243,245,247);}
+		/*.clear:after{content:'';display:block;height:0;clear:both;}*/
+		.nav{width:1800px;height:100px;}
+		.n1{width:64px;height:20px;margin:32px 0px 16px 16px;float:left;}
+		.n0{font-size:2em;color:blue;margin:20px 16px 20px 300px;float:left;}
+		.n2{border-bottom:2px solid rgb(0,164,255);}
+		.n2{width:32px;height:20px;margin:32px 16px 16px 32px;float:left;}
+		.l2{width:1900px;height:420px;margin:0px 0px 0px 0px;float:left;background-color:RGB(028,003,108);}
+		.m1{width:180px;height:420px;margin:0px 0px 0px 300px;float:left;background-color:RGB(19,1,75);}
+		.s1{width:110px;hight:46px;margin:10px 20px 15px 20px;float:left;color:rgb(255,255,255);font-size:1em;}
+		.ts1{width:110px;hight:46px;margin:10px 20px 15px 20px;float:left;color:rgb(0,180,255);font-size:1em;}
+		.s2{width:15px;hight:16px;margin:10px 0px 15px 0px;float:left;color:rgb(255,255,255);}
+		.a1:visited{color:white;}
+		.a1:hover{color:rgb(0,180,255);}
+		.a2:visited{color:black;}
+		.a2:hover{color:rgb(0,180,255);}
+		.a3:visited{color:rgb(0,180,255);}
+		.a3:hover{color:rgb(0,180,255);}
+		.a4:visited{color:rgb(249,225,3);}
+		.a4:hover{color:rgb(249,225,3);}
+		.a5:visited{color:rgb(0,146,255);}
+		.a5:hover{color:rgb(0,146,255);}
+		.l3{width:1300px;hight:48px;margin:5px 300px 20px 300px;background-color:white;float:left;}
+		.s31{width:90px;hight:20px;margin:14px 16px 14px 16px;color:rgb(0,180,255);font-size:1.3em;float:left;}
+		.s32{width:90px;hight:20px;margin:14px 16px 14px 0px;font-size:1.3em;float:left;}
+		.s33{width:90px;hight:20px;margin:14px 16px 14px 16px;color:rgb(0,180,255);font-size:1.3em;float:right;}
+		.s34{width:16px;hight:20px;margin:14px 16px 14px 0px;font-size:1.3em;float:left;}
+		.l4{width:1300px;hight:48px;margin:16px 300px 15px 300px;float:left;}
+		.s41{font-size:1.5em;width:100px;hight:24px;float:left;}
+		.s42{font-size:0.7em;width:100px;hight:24px;float:right;}
+		.l5{width:1300px;hight:490px;background-color:rgb(243,245,247);margin:10px 300px 0px 300px;float:left;}
+		.m51{width:233px;hight:273px;margin:9px 9px 9px 9px;background-color:white;float:left;}
+		.s51{font-weight:900;width:200px;hight:40px;margin:16px 16px 16px 16px;float:left;}
+		.s52{font-weight:700;font-size:0.7em;width:30px;hight:20px;color:rgb(255,141,73);margin:0px 0px 0px 16px;float:left;}
+		.s53{font-size:0.7em;width:100px;hight:20px;color:rgb(153,153,153);margin:0px 0px 20px 20px;float:left;}
+		.m61{width:40px;height:16px;margin:0px 32px 0px 200px;float:left;color:rgb(0,180,255);}
+		.m62{width:40px;height:16px;margin:0px 32px 0px 32px;float:left;}
+		.m63{font-size:1.5em;width:200px;hight:24px;float:left;}
+		.l7{width:1300px;height:320px;margin:10px 300px 40px 300px;float:left;}
+		.m71{width:471px;height:320px;margin:0px 20px 0px 0px;float:left;position:relative;}
+		.m72{width:232px;height:320px;magrin:0px 40px 0px 40px;float:left;overflow:hidden;position:relative;}
+		.s71{font-size:2em;color:rgb(249,225,3);position: absolute;left:20px;top:120px;}
+		.s72{font-size:2em;color:white;position:absolute;left:20px;top:160px;}
+		.s73{color:rgb(249,225,3);position:absolute;left:20px;top:210px;border:2px solid rgb(249,225,3);width:70px;height:24px;padding-top:6px;padding-bottom:6px;padding-left:16px;padding-right:16px;}
+		.s74{background-color:black;opacity:0.4;position:absolute;
+			top:190px;width:232px;height:130px;}
+		.ss71{font-size:1.2em;font-weight:800;position:absolute;top:210px;left:30px;color:white;}
+		.ss72{font-size:0.8em;position:absolute;top:215px;left:100px;color:white;}
+		.ss73{width:200px;height:60px;font-size:0.8em;position:absolute;top:240px;left:15px;color:white;}
+		.l8{width:1300px;height:400px;background-color:white;margin:0px 300px 0px 300px;float:left;}
+		.ll8{width:1900px;height:400px;background-color:white;float:left;}
+		.m81{width:600px;height:300px;margin:100px 0px 200px 30px;}
+		.s81{width:300px:height:100px;margin:0px 0px 40px 0px;}
+		.s82{font-size:0.7em;width:600px;height:16px;margin:0px 0px 40px 0px;}
+		.s83{color:rgb(0,146,255);border:2px solid rgb(0,164,255);width:70px;height:24px;padding-top:6px;padding-bottom:6px;padding-left:16px;padding-right:16px;}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="nav">
+		<div class="n0"><img src="img/雪梨在线_slices/雪梨在线@2x.png"></div>
+		<div class="n2">首页</div>
+		<div class="n1"><a class="a2" href="#">课程</a></div>
+		<div class="n1"><a class="a2" href="#">职业规划</a></div>
+	</div>
+	<div class="l2">
+		<div class="m1">
+			<div class="ts1">前端开发</div>
+			<div class="s2"><img src="img\雪梨在线_slices (1)\形状 3 拷贝@2x.png"></div>
+			<div class="s1"><a class="a1" href="#">后端开发</a></div>
+			<div class="s2">></div>
+			<div class="s1"><a class="a1" href="#">移动开发</a></div>
+			<div class="s2">></div>
+			<div class="s1"><a class="a1" href="#">人工智能</div>
+			<div class="s2">></div>
+			<div class="s1"><a class="a1" href="#">商业预测</a></div>
+			<div class="s2">></div>
+			<div class="s1"><a class="a1" href="#">云计算&大数据</a></div>
+			<div class="s2">></div>
+			<div class="s1"><a class="a1" href="#">运维&从测试</a></div>
+			<div class="s2">></div>
+			<div class="s1"><a class="a1" href="#">UI设计</a></div>
+			<div class="s2">></div>
+			<div class="s1"><a class="a1" href="#">产品</a></div>
+			<div class="s2">></div>
+		</div>
+		<div class="m2"><img src="img\雪梨在线_slices (1)\banner2@2x.png"></div>
+	</div>
+	<div class="l3">
+		<div class="s31">精品推荐</div>
+		<div class="s34">|</div>
+		<div class="s32"><a class="a2" href="#">JQuery</a></div>
+		<div class="s34">|</div>
+		<div class="s32"><a class="a2" href="#">Spark</a></div>
+		<div class="s34">|</div>
+		<div class="s32"><a class="a2" href="#">MySQL</a></div>
+		<div class="s34">|</div>
+		<div class="s32"><a class="a2" href="#">JavaWeb</a></div>
+		<div class="s34">|</div>
+		<div class="s32"><a class="a2" href="#">MySQL</a></div>
+		<div class="s34">|</div>
+		<div class="s32"><a class="a2" href="#">JavaWeb</a></div>
+		<div class="s33"><a class="a3" href="#">修改兴趣</a></div>
+	</div>
+	<div class="l4">
+		<div class="s41">精品推荐</div>
+		<div class="s42">查看全部</div>
+	</div>
+	<div class="l5">
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 133@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Think PHP 5.0 博客系统实战项目演练</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 135@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Android 网络图片加载框架详解</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 136@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Angular 2 最新框架+主流技术+项目实战</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 137@2x(1).png">
+			<div class="s51" width="233px"><a href="#" class="a2">Android Hybrid APP开发实战 H5+原生！</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 137@2x(1).png">
+			<div class="s51" width="233px"><a href="#" class="a2">Android Hybrid APP开发实战 H5+原生！</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+	</div>
+	<div class="l5">
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 133@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Think PHP 5.0 博客系统实战项目演练</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 135@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Android 网络图片加载框架详解</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 136@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Angular 2 最新框架+主流技术+项目实战</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 137@2x(1).png">
+			<div class="s51" width="233px"><a href="#" class="a2">Android Hybrid APP开发实战 H5+原生！</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 137@2x(1).png">
+			<div class="s51" width="233px"><a href="#" class="a2">Android Hybrid APP开发实战 H5+原生！</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+	</div>
+	<div class="l4">
+		<div class="m63">前端开发工程师</div>
+		<div class="m61">热门</div>
+		<div class="m62"><a href="#" class="a2">初级</a></div>
+		<div class="m62"><a href="#" class="a2">中级</a></div>
+		<div class="m62"><a href="#" class="a2">高级</a></div>
+		<div class="s42">查看全部</div>
+	</div>
+	<div class="l5">
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 142@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">微软人工智能-数据分析平台</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 144@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Unity Profiler入门</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 143@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Cocos2d-x 引擎源码中的纹理优化</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 146@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Kami2首页界面切换效果</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+		<div class="m51">
+			<img src="img\雪梨在线_slices (1)\图层 145@2x.png">
+			<div class="s51" width="233px"><a href="#" class="a2">Android Hybrid APP开发实战 H5+原生！</a></div>
+			<div class="s52">高级</div>
+			<div class="s53"><ul><li>1125人在学习</li></ul></div>
+		</div>
+	</div>
+	<div class="l4">
+		<div class="s41">牛人推荐</div>
+	</div>
+	<div class="l7">
+		<div class="m71"><img src="img\雪梨在线_slices (1)\图层 149@2x.png">
+		<div class="s71">毕业季</div>
+		<div class="s72">带你华丽转身</div>
+		<div class="s73"><a href="#" class="a4">点击查看</a></div>
+		</div>
+		<div class="m72"><img src="img\雪梨在线_slices (1)\20172124182104355@2x.png" height="340px">
+			<div class="s74"></div>
+			<div class="ss71"><a class="a1" href="#">闻老师</a></div>
+				<div class="ss72">大数据</div>
+				<div class="ss73">高级互联网软件工程师，曾担任某物流公司CRM开发团队TL。多年JAVAEE、大数据领域研发......</div>
+		</div>
+		<div class="m72"><img src="img\雪梨在线_slices (1)\20154325104317144 (1)@2x.png" height="340px">
+		<div class="s74"></div>
+		<div class="ss71"><a class="a1" href="#">汪老师</a></div>
+				<div class="ss72">前端</div>
+				<div class="ss73">高级软件架构师，全栈开发，多年大型项目管理经验。对Web、components、Node.js......</div>
+		</div>
+		<div class="m72">
+			<img src="img\雪梨在线_slices (1)\20154025104058710@2x.png" height="340px">
+			<div class="s74"></div>
+			<div class="ss71"><a class="a1" href="#">江老师</a></div>
+				<div class="ss72">前端</div>
+				<div class="ss73">多年软件开发经验和教学经验，精通html，css，js，asp.net等编程语言和数据库系统......</div>
+		</div>
+	</div>
+	<div class="ll8">
+	<div class="l8">
+		<div class="m81">
+			<div class="s81"><img src="img/雪梨在线_slices/雪梨在线@2x.png"></div>
+			<div class="s82">致力于普及中国最好的教育，与中国一流大学和机构合作提供在线课程</div>
+			<div class="s83"><a href="#" class="a5">下载APP</a></div>
+		</div>
+
+	</div>
+	</div>
+
+</body>
+</html>

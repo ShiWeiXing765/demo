@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>科创型公司的门户</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    a{
+    text-decoration: none;
+}
+    .topbig{
+        width: 100%;
+        height: 271px;
+        overflow:hidden;
+        margin: 0;
+    }
+    .topback{
+        width: 100%;
+        height: 100%;
+    }
+    .list{
+        width:100%;
+        height: 60px;
+        margin:0 auto;
+        z-index:10;
+        background-image:linear-gradient(to right, #FFFFFF,#2B2B2B,#FFFFFF);
+    }
+    .list ul{
+        margin:0;
+        padding: 0;
+        z-index:10;
+    }
+    .list ul li{
+        width: 20%;
+        height:60px;
+        float:left;
+        text-align: center;
+        line-height: 60px;
+        list-style: none;
+        z-index:100;
+    }
+    .list ul li a{
+    color:#000;
+    }
+    .list ul li:hover{
+    background: black;
+    }
+ 
+    .list ul li ul li{   
+        position:relative;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        display: none;
+        background: black;
+        z-index:999;
+    }
+    .list ul li:hover ul li{
+        display: block;
+    }
+    .list ul li:hover a{
+    color:white;
+    }
+    .list ul li:hover a:link{
+    color:white;
+    }
+    .list ul li:hover a:hover{
+    color:red;
+    }
+    .midbig{
+        width: 100%;
+        height:424px;
+        position: absolute;
+        overflow:hidden;
+        z-index:1;
+        -moz-background-size:100% 100%; background-size:100% 100%;
+    }
+    .toright{
+        position: absolute;
+        top:212px;
+        right:0px;
+        z-index: 100;
+    }
+    .p1{
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left:0px;
+        right:0px;
+    }
+    .p2{
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        position: absolute;
+        top: 0;
+        left:0px;
+        right:0px;
+    }
+    .p3{
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left:0px;
+        right:0px;
+    }
+    .p4{
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left:0px;
+        right:0px;
+    }
+    .midbig a:hover{
+        background-color: white;
+    }
+    .last{
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 770px;
+    }
+    .lastmid1{
+        height: 200px;
+        width: 200px;
+        float: left;
+    }
+    .lastmid2{
+        height: 200px;
+        width: 250px;
+        float: left;
+    }
+    </style>
+    <script>
+    var demo;
+    var i=50;
+    var ii=6;
+    var temp=0;
+    var l=0;
+    
+    window.onload=function(){
+        alert("那个轮播图做完向右的以后发现，由于一开始没想好逻辑，做不了向左的，脑子笨");
+        var a=confirm("老师你不会下意识点了确定然后没看字吧，没看的话点取消重新看一次吧，看过了直接点确认关了吧");
+        if(a==false){alert("那个轮播图做完向右的以后发现，由于一开始没想好逻辑，做不了向左的，脑子笨");}
+    }
+    setInterval(toright,4000);
+    function ss(){
+        var a1=document.getElementById("p1");
+        var a2=document.getElementById("p2");
+        var a3=document.getElementById("p3");
+        var a4=document.getElementById("p4");
+        l++;
+        if(temp<2){
+            if(temp==0){
+                a1.style.left=i+"px";
+            } else{
+                a2.style.left=i+"px";               
+            }
+        } else{
+            a3.style.left=i+"px";               
+        }
+        if(i<480||ii<1){
+            i+=ii;
+        }else{
+            i+=ii;
+            ii-=0.018;
+        }
+        if(i>1600){
+            temp+=1;
+            temp=temp%3;
+        if(temp==0){
+            a1.style.left=0;
+            a2.style.left=0;
+            a3.style.left=0;
+            l=0;
+            }
+            clearInterval(demo);
+        }
+    }
+    function toright(){
+        if(l%494==0){
+        i=50;
+        ii=6;
+    demo=setInterval(ss,1);
+        }   
+    }
+    function butt(){
+        alert("爱您！！");
+    }
+    </script>
+</head>
+<body>
+<div class="topbig">
+    <div class="topback">
+        <img  src="C:\Users\12069\Desktop\新建文件夹\img\kj.png"/>
+    </div>
+</div>
+<div class="list">
+    <ul>
+        <li>
+        <a href="#">首页</a>
+            <ul>
+                <li><a href="#">产业互联网</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于我们</a> 
+            <ul>
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">企业荣誉</a></li>
+                <li><a href="#">发展历程</a></li>
+            </ul>     
+        </li>
+        <li><a href="#">新闻中心</a>
+            <ul>
+                <li><a href="#">区块链</a></li>
+                <li><a href="#">产业互联网前沿</a></li>
+            </ul>      
+        </li>
+        <li><a href="#">联系我们</a>
+            <ul>
+                <li><a href="#">微信公众号</a></li>
+                <li><a href="#">在线客服</a></li>
+            </ul>      
+        </li>
+        <li><a href="#">互联网产业链</a>
+            <ul>
+                <li><a href="#">广告投放</a></li>
+                <li><a href="#">流量</a></li>
+            </ul>      
+        </li>
+    </ul>
+</div>
+<div class="midbig">
+    <img class="toright" onclick="toright()" src="img/箭头.png"/>
+    <img class="p1" id="p1" src="C:\Users\12069\Desktop\新建文件夹\img\lun1.jpg">
+    <img class="p2" id="p2" src="C:\Users\12069\Desktop\新建文件夹\img\lun2.jpg">
+    <img class="p3" id="p3" src="C:\Users\12069\Desktop\新建文件夹\img\lun3.jpg">
+    <img class="p4" id="p4" src="C:\Users\12069\Desktop\新建文件夹\img\lun1.jpg">  
+</div>
+<div class="last">
+    <div class="lastmid1">
+    <p></br></br>备注：</br>JS1：弹窗</br>JS2：自动轮播</br>JS3：点击轮播</br>那个轮播图做完向右的以后发现，由于一开始没想好逻辑，做不了向左的，脑子笨</p></br>
+    </div>
+    <div class="lastmid2">
+    <img width="200px" height="200px" src="C:\Users\12069\Desktop\新建文件夹\img\心.jpg">
+    </div>
+    <div class="lastmid1"></br></br></br><button onclick="butt()">做得不好，老师捞一下我嘛</button></div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
